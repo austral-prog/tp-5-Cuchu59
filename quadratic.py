@@ -43,10 +43,10 @@ def derivation(a, b, c):
     if(a != 0):
         term1 =  f" {a*2} * X"
         formula = formula + term1
-    if(b != 0):
-        term2 = f"+ {b}"
+    if(b != 0 and a != 0):
+        term2 = f" + {b}"
         formula = formula + term2
-    elif(a == 0):
+    elif(a == 0 and b != 0):
         term2 = f" {b}"
         formula = formula + term2
     return formula
