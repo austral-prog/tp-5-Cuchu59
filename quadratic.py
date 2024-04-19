@@ -38,6 +38,13 @@ def to_string(a, b, c):
     
     return formula
 
-def derivation(a, b):
-    derivative = f"f'(x) = {2*a}x + {b}" # La cuadratica sola se puede hacer por tabla (gracias a Dios)
-    return derivative
+def derivation(a, b, c):
+    formula = f"f'(x) ="
+    if(a != 0):
+        term1 =  f" {a*2}x +"
+        formula = formula + term1
+    if(b != 0):
+        term2 = f" {b}"
+        formula = formula + term2
+    
+    return formula
