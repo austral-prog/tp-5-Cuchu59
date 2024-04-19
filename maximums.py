@@ -7,11 +7,4 @@ def max_of_two(x, y):
     return max_value
 
 def max_of_three(x,y,z):
-    max_value = 0
-    if(x >= y and x >= z):
-        max_value = x
-    elif(y >= x and y >= z):
-        max_value = y
-    else:
-        max_value = z
-    return max_value
+    return max_of_two(x,y) if max_of_two(x,y) >= max_of_two(y,z) else max_of_two(y,z)
