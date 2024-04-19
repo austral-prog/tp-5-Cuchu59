@@ -49,4 +49,7 @@ def derivation(a, b, c):
     elif(a == 0 and b != 0):
         term2 = f" {b}"
         formula = formula + term2
+    if(a == 0 and b == 0):
+        term2 = f" {b}"
+        formula = formula + term2
     return formula
