@@ -25,7 +25,17 @@ def value_y(a, b, c, x):
     return y
 
 def to_string(a, b, c):
-    formula = f"f(x) = {a} * X^2 + {b} * X + {c}"
+    formula = f"f(x) ="
+    if(a != 0):
+        term1 =  f" {a} * X^2 +"
+        formula = formula + term1
+    if(b != 0):
+        term2 = f" {b} * X +"
+        formula = formula + term2
+    if(c != 0):
+        term3 = f" {c}"
+        formula = formula + term3
+    
     return formula
 
 def derivation(a, b):
